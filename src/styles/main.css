@@ -22,6 +22,10 @@ body {
   font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
 }
 
+.primary-color {
+  color: var(--primary-color);
+}
+
 .bebas-pro {
   font-family: "Bebas Neue Pro", Arial, Helvetica, sans-serif;
 }
@@ -33,11 +37,30 @@ body {
   opacity: 1;
 }
 
+.header-button {
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 18px;
+  opacity: 1;
+}
+
+.primary-button {
+  background: #1d71b8 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 18px;
+  opacity: 1;
+}
+
 .hero {
   position: relative;
   background: url(../../public/images/hijitus.jpg);
   background-size: cover;
   min-height: 31.5em;
+}
+
+.send-button {
+  background: #fedca9 0% 0% no-repeat padding-box;
+  border-radius: 0px 8px 8px 0px;
+  opacity: 1;
 }
 
 .background-overlay {
@@ -109,4 +132,18 @@ body {
   box-shadow: 0px 0px 20px #00000029;
   border-radius: 24px;
   opacity: 0.75;
+}
+
+input::placeholder {
+  color: var(--primary-color);
+  font-style: italic;
+  letter-spacing: 0px;
+  opacity: 1;
+}
+
+.iwanttohelp-button {
+  background: #1d71b8 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 12px #00000029;
+  border-radius: 16px;
+  opacity: 1;
 }

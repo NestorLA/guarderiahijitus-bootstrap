@@ -23,14 +23,23 @@
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="styles/main.css" />
     <title>Guarderia Hijitus</title>
+
+    <!-- SLICK CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
   </head>
   <body>
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg p-4 bg-header" id="home">
+    <nav class="navbar navbar-expand-md p-4 bg-header" id="home">
       <a class="navbar-brand ml-5" href="#home"
         ><img
           src="../public/svg/GuarderiaHijitus.svg"
           alt="Logo Guarderia Hijitus"
+          width="60%"
+          height="50%"
       /></a>
       <button
         class="navbar-toggler"
@@ -43,46 +52,17 @@
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#"
-              >Home <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Dropdown
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link disabled"
-              href="#"
-              tabindex="-1"
-              aria-disabled="true"
-              >Disabled</a
-            >
-          </li>
-        </ul>
+        <div class="ml-auto">
+          <button
+            class="btn btn-light primary-color header-button bebas-pro px-3"
+          >
+            <span class="h5">Contacto</span>
+          </button>
+          <button class="btn text-light primary-button bebas-pro px-3 ml-2">
+            <span class="h5">Donar</span>
+          </button>
+        </div>
       </div>
     </nav>
 
@@ -93,13 +73,13 @@
           <div class="row mt-2">
             <div
               class="
-                col-md-6
+                col-md-8 col-lg-6
                 text-center
                 justify-content-center
                 align-self-center
               "
             >
-              <h1 class="mb-2 ml-5">
+              <h1 class="mb-2 text-left display-4 shadow">
                 LA GUARDERIA INFANTIL HIJITUS CUMPLE 50 AÑOS
               </h1>
             </div>
@@ -113,28 +93,28 @@
                 align-self-center
               "
             >
-              <p class="mb-3 bebas-pro">
-                Lo mejor para los niños, cuidar su presente y prepararlos para
-                su futuro.
+              <p class="mb-3 bebas-pro h3 text-left shadow">
+                Lo mejor para los niños, cuidar su presente <br />
+                y prepararlos para su futuro.
               </p>
             </div>
           </div>
           <div class="row">
-            <div class="donate-card">
-              <p>¡Vos podés ser parte del cambio!</p>
-              <p>
+            <div class="donate-card p-3 col-md-6">
+              <h2 class="bebas-pro font-weight-bold h5">¡Vos podés ser parte del cambio!</h2>
+              <p class="bebas-pro">
                 Acompañamos y brindamos educación integral a la niñez y su
                 familia. Con tu aporte ayudás a más de 100 niños y niñas a
                 acceder a sus derechos.
               </p>
-              <p>¿Queres saber más sobre lo que hacemos?</p>
-              <div>
-                <input placeholder="Tu mail..." />
-                <button class="btn btn-warning">Enviar</button>
+              <p class="bebas-pro font-weight-light">¿Queres saber más sobre lo que hacemos?</p>
+              <div class="d-flex">
+                <input placeholder="Tu mail..." class="w-100"/>
+                <button class="btn send-button bebas-pro font-weight-bold px-4">Enviar</button>
               </div>
             </div>
-            <div class="como-ayudar">
-              <p>¿Cómo ayudar?</p>
+            <div class="como-ayudar p-3">
+              <h2 class="bebas-pro font-weight-bold h5">¿Cómo ayudar?</h2>
               <ul style="list-style-type: none">
                 <li>Tarjeta Marcos Juarez</li>
                 <li>Tarjeta COYSPU</li>
@@ -142,7 +122,7 @@
                 <li>Efectivo</li>
                 <li>Asociate</li>
               </ul>
-              <button class="btn btn-primary">¡Quiero ayudar!</button>
+              <button class="btn iwanttohelp-button text-white px-5 bebas-pro"><span class="h5">¡Quiero ayudar!</span></button>
             </div>
           </div>
         </div>
@@ -203,10 +183,12 @@
                   src="../public/svg/Grupo 43.svg"
                   alt=""
                   class="card-img-top p-4 mt-3"
+                  width="60%"
+                  height="50%"
                 />
                 <div class="card-body text-left">
-                  <div class="card-title h3">Apoyo escolar:</div>
-                  <p class="card-text bebas-pro font-weight-bold">
+                  <div class="card-title h2">Apoyo escolar:</div>
+                  <p class="card-text bebas-pro font-weight-bold h5">
                     Brindamos apoyo escolar a l@s niñ@s entre 6 y 12 años que se
                     encuentran en el nivel primario. Llevamos a cabo un
                     seguimiento de su desarrollo y rendimiento escolar junto a
@@ -218,17 +200,18 @@
             <div class="col-md-4">
               <div class="card h-100 whatwedo-card">
                 <img
-                  src="../public/svg/Grupo 43.svg"
+                  src="../public/svg/Grupo 28.svg"
                   alt=""
                   class="card-img-top p-4 mt-3"
+                  width="60%"
+                  height="50%"
                 />
                 <div class="card-body text-left">
-                  <div class="card-title h3">Apoyo escolar:</div>
-                  <p class="card-text bebas-pro font-weight-bold">
-                    Brindamos apoyo escolar a l@s niñ@s entre 6 y 12 años que se
-                    encuentran en el nivel primario. Llevamos a cabo un
-                    seguimiento de su desarrollo y rendimiento escolar junto a
-                    su familia.
+                  <div class="card-title h2">Guardería:</div>
+                  <p class="card-text bebas-pro font-weight-bold h5">
+                    Fomentamos el juego y actividades lúdicas a niñ@s entre 2 y
+                    12 años, cumpliendo, a su vez, la función de apoyo, cuidado
+                    y protección de sus derechos.
                   </p>
                 </div>
               </div>
@@ -236,17 +219,54 @@
             <div class="col-md-4">
               <div class="card h-100 whatwedo-card">
                 <img
-                  src="../public/svg/Grupo 43.svg"
+                  src="../public/svg/Grupo 30.svg"
                   alt=""
                   class="card-img-top p-4 mt-3"
                 />
                 <div class="card-body text-left">
-                  <div class="card-title h3">Apoyo escolar:</div>
-                  <p class="card-text bebas-pro font-weight-bold">
-                    Brindamos apoyo escolar a l@s niñ@s entre 6 y 12 años que se
-                    encuentran en el nivel primario. Llevamos a cabo un
-                    seguimiento de su desarrollo y rendimiento escolar junto a
-                    su familia.
+                  <div class="card-title h2">Talleres:</div>
+                  <p class="card-text bebas-pro font-weight-bold h5">
+                    Cada año renovamos las propuestas que les traemos a los
+                    peques, para que puedan disfrutar de actividades artísticas,
+                    educación física, entre muchas otras.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center mt-3">
+            <div class="col-md-4">
+              <div class="card h-100 whatwedo-card">
+                <img
+                  src="../public/svg/Grupo 55.svg"
+                  alt=""
+                  class="card-img-top p-4 mt-3"
+                  width="60%"
+                  height="50%"
+                />
+                <div class="card-body text-left">
+                  <div class="card-title h3">Contención psicológica:</div>
+                  <p class="card-text bebas-pro font-weight-bold h5">
+                    Realizamos acompañamientos tanto a los niñ@s o familias que
+                    lo necesiten.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card h-100 whatwedo-card">
+                <img
+                  src="../public/svg/Grupo 44.svg"
+                  alt=""
+                  class="card-img-top p-4 mt-3"
+                  width="60%"
+                  height="50%"
+                />
+                <div class="card-body text-left">
+                  <div class="card-title h3">Apoyo socio-económico:</div>
+                  <p class="card-text bebas-pro font-weight-bold h5">
+                    Brindamos comida, vestimenta, entre otros artículos a las
+                    familias que lo requieran.
                   </p>
                 </div>
               </div>
@@ -267,6 +287,11 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
       crossorigin="anonymous"
+    ></script>
+    <!-- Slick JS -->
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
   </body>
 </html>
